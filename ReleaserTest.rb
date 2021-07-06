@@ -5,28 +5,28 @@
 class ReleaserTest < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chainlink/releasertest/releases/download/v0.1.0/ReleaserTest_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "53840dafd43975af53360a198872ad2e570e99aa77c6978310e265ceb6941713"
+      url "https://github.com/chainlink/releasertest/releases/download/v0.2.0/ReleaserTest_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "868b6168c714e1e948e33a15b251f90de4a9d73cf4f0955e63dea48fe47a4eb3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chainlink/releasertest/releases/download/v0.1.0/ReleaserTest_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "4a35ae601541ceb855e386e11b7e413c2d0b356cf5d88b3f09cac9d62eed2ce1"
+      url "https://github.com/chainlink/releasertest/releases/download/v0.2.0/ReleaserTest_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "81d9e4bfd80506789f50cbe5412e8ae93de99a097be208b2d9e8ef1de9cc75cd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chainlink/releasertest/releases/download/v0.1.0/ReleaserTest_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "e31b597e06fb10f0023dfeefcb33e8b5a703065189ef725769ca5a7ca4c67ab8"
+      url "https://github.com/chainlink/releasertest/releases/download/v0.2.0/ReleaserTest_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "7ed4fe339db51618afdcd932ffd685072773216dca52c303f5aa24f1e0fd67ed"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chainlink/releasertest/releases/download/v0.1.0/ReleaserTest_0.1.0_Linux_arm64.tar.gz"
-      sha256 "116f2a648ebc85b01eebac9eb62252b9a478bacc3f59cb80c5ba12fc370b6e8f"
+      url "https://github.com/chainlink/releasertest/releases/download/v0.2.0/ReleaserTest_0.2.0_Linux_arm64.tar.gz"
+      sha256 "b923ca84b12485005380ad2567375a35bdd799e4848b6ef24c065c141a638c40"
     end
   end
 
